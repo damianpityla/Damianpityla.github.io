@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey form.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Your Order</h1>
+        <p id="description">Fill the form below to complete your order</p>
+    </header>
+    <form action="" id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" class="c100" id="name" placeholder="Homer Simpson" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" class="c100" placeholder="HSimpson@dmail.com" required>
+        </div>
+        <div>
+            <label for="Age" id="age-label">Age</label>
+            <input type="number" class="c100" id="name" min="18" max="120" placeholder="Choose your age" required>
+        </div>
+            <label for="dropdown" id="dropdown-label">How did you hear about us?</label>
+            <select name="dropdown" class="c100" id="dropdown">
+            <option disabled selected value>(select one)</option>
+            <option value="1">Facebook ads</option>
+            <option value="2">Our tiktok</option>
+            <option value="3">Recomendation</option>
+            <option value="4">Other</option>
+        </select>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+         <div class="checkbox-div">What would you like to see improved?  
+         <span class="checkbox-span">   (Check all that apply)</span>
+        </div>
+        <label>
+            <input type="checkbox" name="prefer" value="Our products">Our products
+        </label>
+        <label>
+            <input type="checkbox" name="prefer" value="Our service">Our service
+        </label>
+        <label>
+            <input type="checkbox" name="prefer" value="Our web page">Our web page
+        </label>
+        <label>
+            <input type="checkbox" name="prefer" value="Our prices">Our prices
+        </label>
+        <div>Any suggestions?</div>
+        <label>
+            <textarea name="comments" class="c100" id="comments" cols="30" rows="3" placeholder="I loved the service!"></textarea>
+        </label>
+        <input id="submit" class="c100" type="submit" value="Submit">
+    </form>
+</body>
+</html>
