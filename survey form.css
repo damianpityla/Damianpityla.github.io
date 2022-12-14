@@ -36,22 +36,26 @@ label, div{
   border: none;
   border-radius: 0.25em;
   padding-left: 15px;
+  color: grey;
 }
 #title, #description{
   text-align: center;
   margin-left: auto;
 }
 #description{
-  font-style: italic;
+  font-style: italic; 
   font-size: 25px;
 } 
 #submit{
   background-color: #37af65;
   margin-top: 20px;
+  color: black;
+  font-size: larger;
 }
 textarea{
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   resize: vertical;
   padding-top: 5px;
+  font-size: large;
 }
